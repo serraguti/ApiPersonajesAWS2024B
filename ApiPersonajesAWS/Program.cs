@@ -10,7 +10,7 @@ builder.Services.AddCors(p => p.AddPolicy("corsenabled", options =>
     options.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
 }));
 
-// Add services to the container.
+// Add services to the contai
 
 string connectionString = builder.Configuration.GetConnectionString("MysqlTelevision");
 builder.Services.AddTransient<RepositoryPersonajes>();
